@@ -1,0 +1,16 @@
+{
+  "name": "slr-group-website",
+  "version": "1.0.0",
+  "description": "SLR Group website with Hospital, Lawn, and School sections plus backend APIs.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "slr",
+    "website"
+  ],
+  "author": "",
+  "license": "MIT"
+}
