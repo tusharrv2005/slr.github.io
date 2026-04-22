@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLR Group | Home</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>SLR Group</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/hospital">Hospital</a>
+        <a href="/lawn">Lawn</a>
+        <a href="/school">School</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Welcome to SLR Group</h2>
+        <p>
+          Ye website SLR Group ke 3 major sections ke liye banayi gayi hai: Hospital,
+          Lawn aur School. Har section ka alag dedicated page available hai.
+        </p>
+      </section>
+
+      <section>
+        <h2>Our Sections</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Hospital</h3>
+            <p>Healthcare services aur emergency support.</p>
+            <a href="/hospital">Visit Hospital Page</a>
+          </article>
+          <article class="card">
+            <h3>Lawn</h3>
+            <p>Shaadi aur events ke liye complete lawn solutions.</p>
+            <a href="/lawn">Visit Lawn Page</a>
+          </article>
+          <article class="card">
+            <h3>School</h3>
+            <p>Quality education aur student development programs.</p>
+            <a href="/school">Visit School Page</a>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Inquiry Form</h2>
+        <form onsubmit="submitInquiry(event)">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required />
+
+          <label for="section">Section</label>
+          <select id="section" name="section" required>
+            <option value="hospital">Hospital</option>
+            <option value="lawn">Lawn</option>
+            <option value="school">School</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit Inquiry</button>
+          <p id="notice" class="notice" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
